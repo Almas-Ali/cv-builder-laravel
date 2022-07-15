@@ -8,8 +8,8 @@
 
     <div class="user-form">
         <h2 align="center" class="form-title">Fill the form correctly</h2>
-        <form action="{{ route('cv') }}" method="post" class="form-group text-dark" enctype="multipart/form-data">
-
+        <form action="{{ route('cv_generator') }}" method="post" class="form-group text-dark" enctype="multipart/form-data">
+            @csrf
             <div class="personal">
                 <h4 align="center" class="text-light pt-2 form-title">Personal Informations</h4>
 

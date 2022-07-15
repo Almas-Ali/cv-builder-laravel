@@ -18,7 +18,8 @@ use App\Http\Controllers\cvController;
 
 Route::get('/', [cvController::class, 'index'])->name('index');
 Route::get('cv-builder', [cvController::class, 'cv_builder'])->name('cv_builder');
-Route::get('cv', [cvController::class, 'cv'])->name('cv');
+Route::post('cv-generator', [cvController::class, 'cv_generator'])->name('cv_generator');
+Route::get('cv/{id}', [cvController::class, 'cv'])->name('cv');
 Route::get('about', [cvController::class, 'about'])->name('about');
 Route::get('contact', [cvController::class, 'contact'])->name('contact');
 Route::get('privacy-policy', [cvController::class, 'privacy_policy'])->name('privacy_policy');

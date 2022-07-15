@@ -173,3 +173,13 @@ marquee {
     color: #0fb;
   }
 }
+
+@media screen and (max-width: 600px) {
+
+  nav ul li {
+    padding: 4px;
+    margin: 0 6px;
+    font-size: 12px;
+  }
+
+}
